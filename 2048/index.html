@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 | klpod221</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Fira Code, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        This is the 2048 game.
+    </h1>
+    <p>But this project is not 'mini project' anymore.</p>
+    <p>So I moved it to a separate repository.</p>
+    <p>
+        Click <a href="https://klpod221.site/2048">here</a> or wait <span id="countdown"></span> seconds to be redirected.
+    </p>
+
+    <script>
+        let countdown = 5;
+        const countdownElement = document.getElementById('countdown');
+        countdownElement.textContent = countdown;
+        const countdownInterval = setInterval(() => {
+            countdown--;
+            countdownElement.textContent = countdown;
+            if (countdown === 0) {
+                clearInterval(countdownInterval);
+                window.location.href = 'https://klpod221.site/2048';
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>
