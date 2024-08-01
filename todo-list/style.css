@@ -1,0 +1,293 @@
+/* general */
+body {
+  font-family: "Handlee", cursive;
+}
+:root {
+  --hue: 172;
+  --saturation: 100%;
+  --lightness: 44%;
+  --main-color: hsl(var(--hue), var(--saturation), var(--lightness));
+  /* --main-color: #00dfc0; */
+  --text-color: #454b54;
+  --white-color: #fff;
+}
+.to-do-list {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1186%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(0%2c 223%2c 192%2c 1)'%3e%3c/rect%3e%3cuse xlink:href='%23SvgjsSymbol1193' x='0' y='0'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsSymbol1193' x='720' y='0'%3e%3c/use%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1186'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cpath d='M-1 0 a1 1 0 1 0 2 0 a1 1 0 1 0 -2 0z' id='SvgjsPath1192'%3e%3c/path%3e%3cpath d='M-3 0 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0z' id='SvgjsPath1189'%3e%3c/path%3e%3cpath d='M-5 0 a5 5 0 1 0 10 0 a5 5 0 1 0 -10 0z' id='SvgjsPath1191'%3e%3c/path%3e%3cpath d='M2 -2 L-2 2z' id='SvgjsPath1190'%3e%3c/path%3e%3cpath d='M6 -6 L-6 6z' id='SvgjsPath1188'%3e%3c/path%3e%3cpath d='M30 -30 L-30 30z' id='SvgjsPath1187'%3e%3c/path%3e%3c/defs%3e%3csymbol id='SvgjsSymbol1193'%3e%3cuse xlink:href='%23SvgjsPath1187' x='30' y='30' stroke='rgba(231%2c 0%2c 0%2c 1)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='30' y='90' stroke='rgba(17%2c 17%2c 22%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1189' x='30' y='150' stroke='rgba(231%2c 0%2c 0%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='30' y='210' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='30' y='270' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1190' x='30' y='330' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='30' y='390' stroke='rgba(17%2c 17%2c 22%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='30' y='450' stroke='rgba(0%2c 19%2c 231%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='30' y='510' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='30' y='570' stroke='rgba(231%2c 0%2c 0%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='90' y='30' stroke='rgba(17%2c 17%2c 22%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='90' y='90' stroke='rgba(231%2c 0%2c 0%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1190' x='90' y='150' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1190' x='90' y='210' stroke='rgba(0%2c 19%2c 231%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1187' x='90' y='270' stroke='rgba(0%2c 19%2c 231%2c 1)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='90' y='330' stroke='rgba(0%2c 19%2c 231%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='90' y='390' stroke='rgba(0%2c 19%2c 231%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='90' y='450' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1192' x='90' y='510' stroke='rgba(0%2c 19%2c 231%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1192' x='90' y='570' stroke='rgba(17%2c 17%2c 22%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='150' y='30' stroke='rgba(231%2c 0%2c 0%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='150' y='90' stroke='rgba(0%2c 19%2c 231%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='150' y='150' stroke='rgba(0%2c 19%2c 231%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='150' y='210' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='150' y='270' stroke='rgba(231%2c 0%2c 0%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='150' y='330' stroke='rgba(231%2c 0%2c 0%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='150' y='390' stroke='rgba(231%2c 0%2c 0%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='150' y='450' stroke='rgba(0%2c 19%2c 231%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1187' x='150' y='510' stroke='rgba(231%2c 0%2c 0%2c 1)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='150' y='570' stroke='rgba(17%2c 17%2c 22%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='210' y='30' stroke='rgba(17%2c 17%2c 22%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1190' x='210' y='90' stroke='rgba(0%2c 19%2c 231%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1189' x='210' y='150' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='210' y='210' stroke='rgba(231%2c 0%2c 0%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1192' x='210' y='270' stroke='rgba(231%2c 0%2c 0%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='210' y='330' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1189' x='210' y='390' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='210' y='450' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1190' x='210' y='510' stroke='rgba(0%2c 19%2c 231%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1189' x='210' y='570' stroke='rgba(231%2c 0%2c 0%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='270' y='30' stroke='rgba(231%2c 0%2c 0%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='270' y='90' stroke='rgba(17%2c 17%2c 22%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1189' x='270' y='150' stroke='rgba(231%2c 0%2c 0%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='270' y='210' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='270' y='270' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='270' y='330' stroke='rgba(231%2c 0%2c 0%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='270' y='390' stroke='rgba(231%2c 0%2c 0%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1190' x='270' y='450' stroke='rgba(0%2c 19%2c 231%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1192' x='270' y='510' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1189' x='270' y='570' stroke='rgba(0%2c 19%2c 231%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1187' x='330' y='30' stroke='rgba(0%2c 19%2c 231%2c 1)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='330' y='90' stroke='rgba(17%2c 17%2c 22%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1192' x='330' y='150' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1189' x='330' y='210' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1192' x='330' y='270' stroke='rgba(17%2c 17%2c 22%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1189' x='330' y='330' stroke='rgba(0%2c 19%2c 231%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='330' y='390' stroke='rgba(231%2c 0%2c 0%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='330' y='450' stroke='rgba(0%2c 19%2c 231%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1190' x='330' y='510' stroke='rgba(17%2c 17%2c 22%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1192' x='330' y='570' stroke='rgba(17%2c 17%2c 22%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1190' x='390' y='30' stroke='rgba(0%2c 19%2c 231%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='390' y='90' stroke='rgba(0%2c 19%2c 231%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='390' y='150' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='390' y='210' stroke='rgba(17%2c 17%2c 22%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='390' y='270' stroke='rgba(0%2c 19%2c 231%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1192' x='390' y='330' stroke='rgba(231%2c 0%2c 0%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='390' y='390' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1190' x='390' y='450' stroke='rgba(0%2c 19%2c 231%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='390' y='510' stroke='rgba(231%2c 0%2c 0%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='390' y='570' stroke='rgba(231%2c 0%2c 0%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='450' y='30' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='450' y='90' stroke='rgba(231%2c 0%2c 0%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='450' y='150' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1192' x='450' y='210' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='450' y='270' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='450' y='330' stroke='rgba(17%2c 17%2c 22%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='450' y='390' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='450' y='450' stroke='rgba(231%2c 0%2c 0%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='450' y='510' stroke='rgba(17%2c 17%2c 22%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1187' x='450' y='570' stroke='rgba(17%2c 17%2c 22%2c 1)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='510' y='30' stroke='rgba(17%2c 17%2c 22%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='510' y='90' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1189' x='510' y='150' stroke='rgba(17%2c 17%2c 22%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='510' y='210' stroke='rgba(0%2c 19%2c 231%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='510' y='270' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='510' y='330' stroke='rgba(231%2c 0%2c 0%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='510' y='390' stroke='rgba(0%2c 19%2c 231%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1189' x='510' y='450' stroke='rgba(0%2c 19%2c 231%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='510' y='510' stroke='rgba(17%2c 17%2c 22%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1190' x='510' y='570' stroke='rgba(17%2c 17%2c 22%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1190' x='570' y='30' stroke='rgba(0%2c 19%2c 231%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='570' y='90' stroke='rgba(17%2c 17%2c 22%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1192' x='570' y='150' stroke='rgba(231%2c 0%2c 0%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='570' y='210' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='570' y='270' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='570' y='330' stroke='rgba(17%2c 17%2c 22%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1189' x='570' y='390' stroke='rgba(231%2c 0%2c 0%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1189' x='570' y='450' stroke='rgba(0%2c 19%2c 231%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1190' x='570' y='510' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='570' y='570' stroke='rgba(231%2c 0%2c 0%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='630' y='30' stroke='rgba(0%2c 19%2c 231%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1190' x='630' y='90' stroke='rgba(231%2c 0%2c 0%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='630' y='150' stroke='rgba(17%2c 17%2c 22%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='630' y='210' stroke='rgba(0%2c 19%2c 231%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='630' y='270' stroke='rgba(231%2c 0%2c 0%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='630' y='330' stroke='rgba(0%2c 19%2c 231%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='630' y='390' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1192' x='630' y='450' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1190' x='630' y='510' stroke='rgba(231%2c 0%2c 0%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1189' x='630' y='570' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='690' y='30' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1190' x='690' y='90' stroke='rgba(17%2c 17%2c 22%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='690' y='150' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1192' x='690' y='210' stroke='rgba(0%2c 19%2c 231%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='690' y='270' stroke='rgba(231%2c 0%2c 0%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1189' x='690' y='330' stroke='rgba(231%2c 0%2c 0%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1188' x='690' y='390' stroke='rgba(17%2c 17%2c 22%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='690' y='450' stroke='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='690' y='510' stroke='rgba(231%2c 0%2c 0%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1191' x='690' y='570' stroke='rgba(231%2c 0%2c 0%2c 1)'%3e%3c/use%3e%3c/symbol%3e%3c/svg%3e");
+  min-height: 100vh;
+}
+.to-do-list .container {
+  min-height: 100vh;
+}
+.to-do-list .container .to-do-list-body {
+  min-height: calc(100vh - 100px);
+  width: 800px;
+}
+.to-do-list .container .to-do-list-body .dots {
+  position: absolute;
+  left: 0;
+  height: 100%;
+}
+.dot {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  margin: 5px 10px;
+  z-index: 9999999;
+}
+.to-do-list .container .to-do-list-body .to-do-list-header {
+  background-image: url("https://drive.google.com/uc?export=view&id=1_uIEZyB6-i3sPZN_i-jZEEZ86PHa7Vju");
+  background-position: center -400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150px;
+  border-radius: 2rem !important;
+}
+.to-do-list .container .to-do-list-body .to-do-list-tasks {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  background-color: #ffffff;
+  opacity: 0.8;
+  background-size: 20px 20px;
+  background-image: -o-repeating-linear-gradient(
+    bottom,
+    var(--main-color),
+    var(--main-color) 1px,
+    var(--white-color) 1px,
+    var(--white-color)
+  );
+  background-image: repeating-linear-gradient(
+    0deg,
+    var(--main-color),
+    var(--main-color) 1px,
+    var(--white-color) 1px,
+    var(--white-color)
+  );
+    border-radius: 2rem !important;
+}
+.to-do-list .container .to-do-list-body .to-do-list-tasks .title {
+  color: var(--text-color);
+}
+.to-do-list .container .to-do-list-body .to-do-list-tasks h1 {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 15px;
+}
+.to-do-list .container .to-do-list-body .to-do-list-tasks h1::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  background-color: var(--main-color);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+}
+.to-do-list .container .to-do-list-body .to-do-list-tasks .input-group {
+  width: 80%;
+  margin: 15px auto;
+}
+.to-do-list .container .to-do-list-body .to-do-list-tasks .input-group input {
+  background: no-repeat;
+  border: none;
+  border-bottom: 2px solid var(--main-color);
+  color: var(--text-color);
+  caret-color: var(--main-color);
+}
+.to-do-list .container .to-do-list-body .to-do-list-tasks .input-group button {
+  background: var(--main-color);
+  color: var(--text-color);
+  border: none;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.to-do-list
+  .container
+  .to-do-list-body
+  .to-do-list-tasks
+  .input-group
+  button:hover {
+  background-color: var(--text-color);
+  color: var(--main-color);
+}
+.to-do-list
+  .container
+  .to-do-list-body
+  .to-do-list-tasks
+  .input-group
+  input::-webkit-input-placeholder {
+  color: var(--text-color) !important;
+}
+.to-do-list
+  .container
+  .to-do-list-body
+  .to-do-list-tasks
+  .input-group
+  input::-moz-placeholder {
+  color: var(--text-color) !important;
+}
+.to-do-list
+  .container
+  .to-do-list-body
+  .to-do-list-tasks
+  .input-group
+  input:-ms-input-placeholder {
+  color: var(--text-color) !important;
+}
+.to-do-list
+  .container
+  .to-do-list-body
+  .to-do-list-tasks
+  .input-group
+  input::-ms-input-placeholder {
+  color: var(--text-color) !important;
+}
+.to-do-list
+  .container
+  .to-do-list-body
+  .to-do-list-tasks
+  .input-group
+  input::placeholder {
+  color: var(--text-color) !important;
+}
+.form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.table {
+  width: 80%;
+  margin: 0 auto !important;
+  background: transparent;
+  border: transparent;
+  text-align: center;
+}
+.table th {
+  background-color: transparent;
+}
+.table th.w-50 {
+  width: 50%;
+}
+.table tbody i {
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.table tbody i.fa-solid.fa-square-check {
+  color: var(--main-color);
+}
+.table tbody i.fa-solid.fa-square-check:hover {
+  color: var(--white-colorr);
+}
+.table tbody i.fa-regular.fa-square-check:hover {
+  color: var(--main-color);
+}
+.table tbody i.fa-trash-can:hover {
+  color: red;
+  -webkit-animation: shake 1s ease 0s infinite normal forwards;
+          animation: shake 1s ease 0s infinite normal forwards;
+}
+.wavy {
+  -webkit-text-decoration: line-through var(--main-color) wavy;
+          text-decoration: line-through var(--main-color) wavy;
+}
+.bg-main-color {
+  --main-color: hsla(var(--hue), var(--saturation), var(--lightness), 0.1);
+  background-color: var(--main-color) !important;
+}
+/* animation */
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+
+  10% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+
+  80% {
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+  }
+
+  90% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+
+  10% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+
+  80% {
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+  }
+
+  90% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+}
+/* media */
+@media (max-width: 767.98px) {
+  .to-do-list .container .to-do-list-body .to-do-list-header {
+    background-position: center -180px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .to-do-list .container .to-do-list-body .to-do-list-header {
+    background-position: center -320px !important;
+  }
+}

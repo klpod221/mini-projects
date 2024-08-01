@@ -1,0 +1,132 @@
+<!-- list all folder  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Projects | klpod221</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .list-group-item {
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .list-group-item:hover {
+            background-color: #e9e9e9;
+        }
+
+        .list-group-item a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .list-group-item a i {
+            font-size: 2em;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .main {
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        hr {
+            margin-bottom: 20px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        p {
+            font-size: 0.9em;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+        }
+
+        footer a {
+            color: #333;
+        }
+
+        footer a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1 class="text-center">List of Mini project</h1>
+        <p class="text-center">Click on the folder to view the project</p>
+        <hr>
+
+        <ul class="list-group">
+
+        </ul>
+
+        <footer>
+            Make with ❤️ by <a href="https://klpod221.site" target="_blank">klpod221</a>
+        </footer>
+    </div>
+
+    <script>
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                const list = document.querySelector('.list-group');
+                data.forEach(item => {
+                    const li = document.createElement('li');
+                    li.className = 'list-group-item';
+
+                    const a = document.createElement('a');
+                    a.href = '/mini-project/' + item;
+
+                    const i = document.createElement('i');
+                    i.className = 'fas fa-folder';
+                    a.appendChild(i);
+
+                    const text = document.createTextNode(item);
+                    a.appendChild(text);
+
+                    li.appendChild(a);
+                    list.appendChild(li);
+                });
+            });
+    </script>
+</body>
+
+</html>
